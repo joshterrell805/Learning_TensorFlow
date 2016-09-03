@@ -2,3 +2,9 @@ This directory contains code for the [beginner](https://www.tensorflow.org/versi
 
 Corresponding blog post:
 [TensorFlow Notes](http://blog.joshterrell.com/2016/09/03/TensorFlow-Notes.html)
+
+# Running
+```
+python tf.py [mode]
+```
+mode - "cnn" (expert) or "softmax" (beginner) (default)
