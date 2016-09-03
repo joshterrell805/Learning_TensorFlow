@@ -44,13 +44,13 @@ def main_expert():
 def parse_args():
     from argparse import ArgumentParser
     parser = ArgumentParser()
-    parser.add_argument('mode', nargs='?', choices=('beginner', 'expert'), default='beginner',
-                        help='run beginner (single softmax) or expert (CNN) version of code.')
+    parser.add_argument('mode', nargs='?', choices=('softmax', 'cnn'), default='softmax',
+                        help='run single softmax (beginner) or cnn (expert) version of code.')
     return parser.parse_args()
 
 if __name__ == "__main__":
     args = parse_args()
-    if args.mode == 'beginner':
+    if args.mode == 'softmax':
         main_beginner()
     else:
         main_expert()
